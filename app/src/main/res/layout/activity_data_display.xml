@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ujjwalkumar.medical_record.DataDisplayActivity">
+
+    <LinearLayout
+        android:id="@+id/data_display_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/grid_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/grid_phone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="phone"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/grid_add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textMultiLine"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/grid_age"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="number"
+            android:layout_weight="1"
+            />
+
+
+        <GridView
+            android:id="@+id/data_display_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:paddingTop="5dp"
+            android:layout_weight="8"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
